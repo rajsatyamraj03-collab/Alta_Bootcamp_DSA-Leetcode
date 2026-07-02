@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int n;
+cin >> n;
+
+    int arr[n];
+
+    // Reading the  array elements from 1 to n 
+    for(int i = 0; i < n; i++)
+ cin >> arr[i];
+ int sum = 0;
+ // Adding  every element
+    for(int i = 0; i < n; i++)
+    {
+        sum += arr[i];
+    }
+
+    // Printing  total sum of the array
+    cout << sum;
+
+    return 0;
+}
+
+//Approach and time complexity of this code is following:-
+->Initialize a variable sum = 0 and hen traversing it and adding each element in the sum and finally printing total sum of the array.
+
+Time complexity:- 0(n)
