@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin >> n;
+    int arr[n];
+
+    // taking Input array from the user 
+    for(int i = 0; i < n; i++)
+        cin >> arr[i];
+    int left = 0;
+    int right = n - 1;
+
+    // Reverse the array using Two Pointer Technique
+    while(left < right)
+    {
+        int temp = arr[left];
+        arr[left] = arr[right];
+        arr[right] = temp;
+
+     left++;
+     right--;
+    }
+    // Print the new reversed array
+    for(int i = 0; i < n; i++)
+        cout << arr[i] << " ";
+
+    return 0;
+}
+
+//Approach and time complexity of this code is following:-
+->Using  two pointers method is very easy and understandable here we are starting from the left side using one pointer and right side from another pointer and swapping from
+both of sides and moving both pointer until they are not be together .
+
+Time complexity:-0(n)
