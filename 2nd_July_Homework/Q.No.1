@@ -1,1 +1,30 @@
+Problem 1 – Contains Duplicate
+LeetCode: 217
+
+Topic
+HashSet
+
+Concepts Practiced
+HashSet
+add()
+contains()
+
+Solution of the problem:-
+-->
+
+   class Solution {
+public:
+ bool containsDuplicate(vector<int>& nums) {
+ unordered_set<int> s;
+ for (auto& n : nums) {
+ if (s.count(n) > 0) {
+ return true;
+ }
+ s.insert(n);
+ }
+ return false;
+ }
+};
+
+
 
